@@ -22,7 +22,7 @@ Aksonometryczny układ osi wraz ze skrótami aksonometrycznymi tworzą tzw. **uk
 - Dimetria kawalerska zachowuje metryki elementów w płaszczyźnie $xz$ i płaszczyznach do niej równoległych (rzuty kola).
 ## Izometria wojskowa
 - W izometrii wojskowej osie $x'$ i $y'$ są względem siebie prostopadle, a skróty aksonometryczne wynoszą $\lambda_{x}=\lambda_{y}=\lambda_{z}=1:1$.
-- Kat miedzy $x'$ i $y'$ przyjmujemy w zakresie $120\degree$ - $150\degree$ (zwykle $135\degree$).
+- Kat miedzy $x'$ i $z'$ przyjmujemy w zakresie $120\degree$ - $150\degree$ (zwykle $135\degree$).
 - Izometria wojskowa zachowuje metryki elementów w płaszczyźnie $xy$ i płaszczyznach do niej równoległych (rzuty kola).
 ## Dimetria prawie prostokątna
 - Dimetria prawie prostokątna należy do grupy aksonometrii ukośnych.
