@@ -60,3 +60,10 @@ $$
 |g-l|=|g-f(x)+f(x)-l| \leq |g-f(x)| + |f(x)-l| < \frac{|g-l|}{2} + \frac{|g-l|}{2} = |g-l|
 $$
 otrzymaliśmy sprzeczność. $\blacksquare$
+
+>[!theorem]
+>Jeżeli $\lim_{ x \to a }f(x) = l \ \wedge \ \lim_{ x \to a }g(x) = m$ to:
+>1. $\lim_{ x \to a }(f+g)(x)=l+m$
+>2. $\lim_{ x \to a }(f \cdot g)(x) = l \cdot m$
+>3. oraz jeżeli $x\neq 0$ to $\lim_{ x \to a }\left( \frac{1}{g} \right)(x)=\frac{1}{m}$
+
