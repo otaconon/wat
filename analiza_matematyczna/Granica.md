@@ -25,8 +25,7 @@ jest prawdziwe, co kończy dowód.
 ### Twierdzenia
 >[!theorem]
 Funkcja nie może dążyć do dwóch granic jednocześnie przy $a$. Innymi słowy, $$
-\lim_{ x \to a }f(x) = g \vee \lim_{ x \to a }f(x)=l \Longrightarrow g = l
-$$
+\lim_{ x \to a }f(x) = g \vee \lim_{ x \to a }f(x)=l \Longrightarrow g = l$$
 
 #### Dowód
 $$\lim_{ x \to a }f(x) = g \Longrightarrow \forall\varepsilon>0 ,\ \exists\delta_{1}>0$$
