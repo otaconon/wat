@@ -98,22 +98,13 @@ $$
 \end{array}
 $$
 $$
-S_{n} = -1 + \sum_{k=2}^{n} \left( -1 \right)^n \frac{2k-1}{k(k-1)} = -1 + \sum_{k=2}^{n} (-1)^n \frac{k + k -1}{k(k-1)} =
-$$
-$$
-= -1 + \sum_{k=2}^{n} (-1)^k \left( \frac{1}{k-1} + \frac{1}{k} \right) = -1 + \sum_{k=1}^{n} \left( \frac{(-1)^{k+1}}{k(k+1)} \right)
-$$
-$$
-= -1 + \frac{1}{2} - \frac{1}{6} + \frac{1}{12} - \frac{1}{20} + \frac{1}{30} \dots + \frac{(-1)^{n+1}}{n(n+1)}=
-$$
-$$
-= -1 - \sum_{k=1}^{n} \frac{1}{2k(2k+1)} + \sum_{k=1}^{n} \frac{1}{2k(2k-1)}
-$$
-$$
-= -1 + \sum_{k=1}^{n} \frac{2k - 1 + 2k + 1}{2k(2k+1)(2k-1)} = 
-$$
-$$
-= -1 + \sum_{k=1}^{n} \frac{4k}{2k(4k^2 - 1)} = -1 + \sum_{k=1}^{n} \frac{2}{4k^2 - 1}
+\begin{array}{l}
+S_{n} = -1 + \sum_{k=2}^{n} \left( -1 \right)^n \frac{2k-1}{k(k-1)} = -1 + \sum_{k=2}^{n} (-1)^n \frac{k + k -1}{k(k-1)} = \\
+= -1 + \sum_{k=2}^{n} (-1)^k \left( \frac{1}{k-1} + \frac{1}{k} \right) = -1 + \sum_{k=1}^{n} \left( \frac{(-1)^{k+1}}{k(k+1)} \right) = \\
+= -1 + \frac{1}{2} - \frac{1}{6} + \frac{1}{12} - \frac{1}{20} + \frac{1}{30} \dots + \frac{(-1)^{n+1}}{n(n+1)}= \\
+= -1 - \sum_{k=1}^{n} \frac{1}{2k(2k+1)} + \sum_{k=1}^{n} \frac{1}{2k(2k-1)} = \\ = -1 + \sum_{k=1}^{n} \frac{2k - 1 + 2k + 1}{2k(2k+1)(2k-1)} = 
+ -1 + \sum_{k=1}^{n} \frac{4k}{2k(4k^2 - 1)} = -1 + \sum_{k=1}^{n} \frac{2}{4k^2 - 1}
+\end{array}
 $$
 $$
 \begin{array}{l}
