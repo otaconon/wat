@@ -16,10 +16,8 @@ Zbiór formuł $\text{Form} \subseteq \sum \}$ to najmniejszy taki zbiór, że:
 >3. $\varphi, \psi \in \text{Form} \wedge \circ \in \left\{ \wedge, \vee, \Rightarrow, \Leftrightarrow \right\} \Rightarrow \left( \varphi \circ \phi \right) \in \text{Form}$
 
 ### Definicja w formie CFG
-$\text{Form} \rightarrow$ $\text{Var}$
-		$| \ \lnot \text{Form}$
-		$\text{| ( Form Binary Form )}$
-$\text{Binary} \rightarrow \vee \ |\ \wedge \ |\ \Rightarrow \ |\ \Leftrightarrow$
+$\text{Form} \rightarrow$ $\text{Var}$ $| \ \lnot \text{Form}$ $\text{| ( Form Bin Form )}$
+$\text{Bin} \rightarrow \vee \ |\ \wedge \ |\ \Rightarrow \ |\ \Leftrightarrow$
 $Var \rightarrow \text{ID} \ | \ P \ | \ F$
 
 ## Postać normalna formuły - DNF i CNF
