@@ -75,11 +75,15 @@ $$
 
 $$
 \begin{array}{l}
-L = (a * b) * c = (ab - a - b + 2) * c = (ab - a - b + 2)c - (ab - a - b + 2) - c + 2 = \\
-abc - ac -bc + 2c - ab + a + b - c - 2 + 2 = abc - ac - ab - bc + a + b + c \\
+L = (a * b) * c = (ab - a - b + 2) * c =  \\
+= (ab - a - b + 2)c - (ab - a - b + 2) - c + 2 = \\
+= abc - ac -bc + 2c - ab + a + b - c - 2 + 2 = \\
+= abc - ac - ab - bc + a + b + c \\
  \\
-P = a * (b * c) = a * (bc - b - c + 2) = a(bc - b - c + 2) - a - (bc - b - c + 2) + 2 = \\
-abc - ab - ac + 2a - a - bc + b + c - 2 + 2 = abc - ab - ac - bc + a + b + c \\
+P = a * (b * c) = a * (bc - b - c + 2) =  \\
+= a(bc - b - c + 2) - a - (bc - b - c + 2) + 2 = \\
+= abc - ab - ac + 2a - a - bc + b + c - 2 + 2 =  \\
+= abc - ab - ac - bc + a + b + c \\
  \\
 L = P \ \blacksquare
 \end{array}
