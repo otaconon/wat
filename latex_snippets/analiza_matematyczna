@@ -45,7 +45,7 @@
 	{trigger: "rd", replacement: "^{$0}$1", options: "mA"},
 	{trigger: "_", replacement: "_{$0}$1", options: "mA"},
 	{trigger: "sts", replacement: "_\\text{$0}", options: "mA"},
-	{trigger: "sq2", replacement: "\\sqrt[2]{$0}$1", options: "mA"},
+	{trigger: "sq2", replacement: "\\sqrt{$0}$1", options: "mA"},
 	{trigger: "sq3", replacement: "\\sqrt[3]{$0}$1", options: "mA"},
 	{trigger: "sqn", replacement: "\\sqrt[n]{$0}$1", options: "mA"},
 	{trigger: "//", replacement: "\\frac{$0}{$1}$2", options: "mA"},

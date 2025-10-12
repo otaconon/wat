@@ -102,3 +102,148 @@ $$
 \lim_{n \to \infty} \frac{1 + 2 + \dots + n}{n^2} = \lim_{n \to \infty} \frac{\frac{n(n+1)}{2}}{n^2} = \lim_{n \to \infty} \frac{n^2 + n}{2n^2} = \frac{1}{2}
 \end{array}
 $$
+### 2.63
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty} \frac{1}{n^k} + \frac{2}{n^k} +\dots + \frac{n}{n^k} = \lim_{n \to \infty} \frac{1+2+\dots+n}{n^k} =  \\
+= \lim_{n \to \infty} \frac{\left( \frac{n(n+1)}{2} \right)}{n^k} = \lim_{n \to \infty} \frac{n^2 + n}{2n^k} = \lim_{n \to \infty}  \frac{1 + \frac{1}{n}}{2n^{k-2}} = \begin{cases}
+\frac{1}{2}, &\text{if } k = 2 \\
+\infty, &\text{if } k < 2 \\
+0, &\text{if } k > 2
+\end{cases}
+\end{array}
+$$
+
+### 2.64
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty} \left( 1 + \frac{2}{n} \right)^n = \lim_{n \to \infty} \left( \left( 1 + \frac{2}{n} \right)^{n/2} \right)^{2} = e^2
+\end{array}
+$$
+
+### 2.65
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty}  \left( 1 - \frac{1}{n^2} \right)^n = \lim_{n \to \infty}  \left(\left( 1 + \left( -\frac{1}{n^2} \right) \right)^{-n^2}\right)^{-1/n} = \lim_{n \to \infty}  e^{-1/n} = 1
+\end{array}
+$$
+
+### 2.66
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty} \left( \frac{n+5}{n} \right)^n = \lim_{n \to \infty} \left( 1 + \frac{5}{n} \right)^n = e^5
+\end{array}
+$$
+
+### 2.67
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty}  \left( 1-\frac{3}{n} \right)^n = e^{-3}
+\end{array}
+$$
+
+### 2.68
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty} \left( 1 - \frac{4}{n} \right)^{-n+3} = \lim_{n \to \infty} \left( \left( 1 - \frac{4}{n} \right)^{-n/4} \right)^{4(n-3)/n} = \lim_{n \to \infty} e^{4(n-3)/n} = e^4
+\end{array}
+$$
+
+### 2.69
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty}  \left( \frac{n^2 + 6}{n^2} \right)^{n^2} = \lim_{n \to \infty} \left( 1 + \frac{6}{n^2} \right)^{n^2} = e^6
+\end{array}
+$$
+
+### 2.70
+
+$$
+\begin{array}{l}
+\lim_{ n \to \infty}  \left( \frac{n^2 + 2}{2n^2 + 1} \right)^{n^2} = \lim_{n \to \infty} \left( 1 + \frac{-n^2+1}{2n^2+1} \right)^{n^2} \\
+a_{n} = \frac{-n^2 + 1}{2n^2 + 1} \\
+= \lim_{n \to \infty} \left(\left( 1 + a_{n} \right)^{1/a_{n}} \right)^{n^2 \cdot a_{n}} = \lim_{n \to \infty} e^{n^2 \cdot a_{n}} = \lim_{n \to \infty} u_{n}\\
+\lim_{n \to \infty} n^2 \cdot a_{n} = \lim_{n \to \infty} \frac{n^2(-n^2 + 1)}{2n^2 + 1} = -\infty \\
+\lim_{n \to \infty} u_{n} = 0
+\end{array}
+$$
+
+### 2.71
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty} \sqrt{n + \sqrt{n}} - \sqrt{n - \sqrt{n}} = \lim_{n \to \infty} \frac{n + \sqrt{n} - n + \sqrt{n}}{\sqrt{n + \sqrt{n}} + \sqrt{n - \sqrt{n}}} = \\
+= \lim_{n \to \infty} \frac{2\sqrt{n}}{\sqrt{n}\left( \sqrt{1 + \frac{1}{\sqrt{n}}} + \sqrt{1 - \frac{1}{\sqrt{n}}} \right)} = 1
+\end{array}
+$$
+
+### 2.72
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty} \sqrt{n(n - \sqrt{n^2 - 1})} = \lim_{n \to \infty} \sqrt{\frac{n^4 - n^4 + n^2}{n^2 + n\sqrt{n^2 - 1}}} = \\
+= \lim_{n \to \infty} \sqrt{\frac{n^2}{n^2\left( 1 + \sqrt{1 - \frac{1}{n^2}} \right)}} = \frac{\sqrt{2}}{2}
+\end{array}
+$$
+
+### 2.73
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty}  n(\sqrt{2n^2 + 1} - \sqrt{2n^2 - 1}) = \lim_{n \to \infty} \frac{n(2n^2 + 1 - 2n^2 + 1)}{\sqrt{2n^2 + 1} + \sqrt{2n^2 - 1}} = \\
+= \lim_{n \to \infty} \frac{2n}{n\left( \sqrt{2 + \frac{1}{n^2}} + \sqrt{2 - \frac{1}{n^2}} \right)} = \frac{\sqrt{2}}{2} \\
+\end{array}
+$$
+
+## 2.74
+
+$$
+\lim_{n \to \infty} \sqrt[n]{2n^3 - 3n^2 + 15} = \lim_{n \to \infty} \sqrt[n]{2} \sqrt[n]{n^3} \sqrt[n]{2 - \frac{3}{n} + \frac{15}{n^3}} = 1
+$$
+
+### 2.75
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty}  \sqrt{n^{10} - 2n^2 + 2} = \lim_{n \to \infty} n^5 \sqrt{1 - \frac{2}{n^8} + \frac{2}{n^{10}}} = \infty
+\end{array}
+$$
+
+### 2.76
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty} \frac{\sqrt{n}}{\sqrt{n + \sqrt{n + \sqrt{n}}}} = \lim_{n \to \infty}  \frac{\sqrt{n}}{\sqrt{n + \sqrt{n}\left( \sqrt{1 + \frac{1}{\sqrt{n}}} \right)}} =  \\
+= \lim_{n \to \infty} \frac{\sqrt{n}}{\sqrt{n} \sqrt{1 + \frac{1}{\sqrt{n}} \sqrt{1 + \frac{1}{\sqrt{n}}}}} = 1
+\end{array}
+$$
+
+### 2.77
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty} \frac{\cos(n^3)}{2n} - \frac{3n}{6n + 1} = 0 - \frac{1}{2} = -\frac{1}{2}
+\end{array}
+$$
+
+### 2.78
+
+$$
+\lim_{n \to \infty} 2^{-n} a \cos(n\pi) = 0
+$$
+
+### 2.79
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty} \frac{n\sin(n!)}{n^2 + 1} = 0
+\end{array}
+$$
+
