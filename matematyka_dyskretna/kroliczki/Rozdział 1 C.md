@@ -45,6 +45,7 @@ $$
 
 
 Gdy zadanie jest w takiej formie jak ta, to można udowodnić tautologię, pokazując że gdy następnik ma wartość T, to poprzednik ma wartość F, gdyż tylko wtedy cała implikacja ma wartość fałsz. 
+
 $$
 w(c \Rightarrow d) = 0 \Leftrightarrow w(c) = 1 \wedge w(d) = 0
 $$
