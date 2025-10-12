@@ -40,12 +40,17 @@ $$
 
 ### 4. Udowodnij, bez analizowania tabeli prawdy, że następująca formuła jest tautologią
 $$
-
-
-
-
-
 ((a \Rightarrow b) \wedge (c \Rightarrow \lnot b) \wedge (\lnot a \Rightarrow d)) \Rightarrow (c \Rightarrow d) \equiv \alpha
 $$
-Gdy zadanie jest w takiej formie jak ta, to można udowodnić tautologię, pokazując że gdy następnik ma wartość T, to poprzednik ma wartość F, gdyż tylko wtedy cała implikacja ma wartość fałsz. $w(c \Rightarrow d) = 0 \Leftrightarrow w(c) = 1 \wedge w(d) = 0$. W takim razie $w(c \Rightarrow \lnot b) = 1 \Leftrightarrow w(b) = 0$, co z kolei oznacza że $w(a) = 0$, oraz $w(\lnot a \Rightarrow d) = 0$. A więc poprzednik jest zawsze fałszywy gdy następnik jest fałszywy, cnd.
 
+
+Gdy zadanie jest w takiej formie jak ta, to można udowodnić tautologię, pokazując że gdy następnik ma wartość T, to poprzednik ma wartość F, gdyż tylko wtedy cała implikacja ma wartość fałsz. 
+$$
+w(c \Rightarrow d) = 0 \Leftrightarrow w(c) = 1 \wedge w(d) = 0
+$$
+W takim razie 
+$$
+w(c \Rightarrow \lnot b) = 1 \Leftrightarrow w(b) = 0
+$$
+
+co z kolei oznacza że $w(a) = 0$, oraz $w(\lnot a \Rightarrow d) = 0$. A więc poprzednik jest zawsze fałszywy gdy następnik jest fałszywy, cnd.
