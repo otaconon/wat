@@ -128,6 +128,11 @@
 	{trigger: "=>", replacement: "\\implies", options: "mA"},
 	{trigger: "=<", replacement: "\\impliedby", options: "mA"},
 
+	// Logic
+	{trigger: "Ra", replacement: "\\Rightarrow", options: "mA"},
+	{trigger: "Lra", replacement: "\\Leftrightarrow", options: "mA"},
+	{trigger: "not", replacement: "\\lnot", options: "mA"},
+
 	{trigger: "and", replacement: "\\cap", options: "mA"},
 	{trigger: "orr", replacement: "\\cup", options: "mA"},
 	{trigger: "inn", replacement: "\\in", options: "mA"},
