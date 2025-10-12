@@ -9,7 +9,7 @@ $$
 $$
 2) _łącznym_, jeśli
 $$
-\forall a,b \in A; \ [(a \circ b) \circ c = (a \circ b) \circ c]
+\forall a,b \in A; \ [(a \circ b) \circ c = a \circ (b \circ c)]
 $$
 
 >[!definition]
