@@ -32,7 +32,7 @@ $Var \rightarrow \text{ID} \ | \ P \ | \ F$
 3. rozdzielaj $\vee, \wedge$ tak aby uzyskać pożądaną formę
 ## Równoważność formuł
 >[!definition]
-Jeśli $p, q \in \text{Form}$, to $p \equiv q \Leftrightarrow \forall w \in W: w(p) = w(q)$
+Jeśli $\varphi, \psi \in \text{Form}$, to $\varphi \equiv \psi \Leftrightarrow \forall w \in W: w(\phi) = w(\psi)$
 
 ## Specjalne formuły
 - _tautologia_ - formuła zawsze prawdziwa
