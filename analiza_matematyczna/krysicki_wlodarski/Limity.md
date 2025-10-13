@@ -247,3 +247,121 @@ $$
 \end{array}
 $$
 
+### 2.80
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty}  \sin(n!) \frac{n}{n^2 + 1} + \frac{2n}{3n + 1} \cdot \frac{n}{1 - 3n} = \\
+= \lim_{n \to \infty} \sin(n!) \frac{n}{n^2 + 1} + \frac{-2n^2}{9n^2 - 1}=  \\
+= \lim_{n \to \infty} \sin(n!) \frac{n^2\left( \frac{1}{n} \right)}{n^2\left( 1 + \frac{1}{n^2} \right)} + \frac{n^2(-2)}{n^2\left( 9 - \frac{1}{n^2} \right)} = \\
+\sin((n \rightarrow \infty)!) \cdot 0 - \frac{2}{9} = -\frac{2}{9}
+\end{array}
+$$
+
+### 2.81
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty} \frac{2n}{2n^2 - 1} \cos \left( \frac{n+1}{2n - 1} \right) - \frac{n}{1-2n} \cdot \frac{n-(-1)^n}{n^2 + 1} =  \\
+\lim_{n \to \infty} \frac{\left( n^2\left( \frac{2}{n} \right) \right)}{n^2\left( 2 - \frac{1}{n^2} \right)} \cos \left( \frac{n\left( 1 + \frac{1}{n} \right)}{n\left( 2 - \frac{1}{n} \right)} \right) - \frac{n}{n \left(-2 + \frac{1}{n} \right)} \cdot \frac{n^2\left( \frac{1}{n} -\frac{(-1)^n}{n^2}\right)}{n^2\left( 1 + \frac{1}{n^2} \right)} =  \\
+0 +\frac{1}{2} \cdot 0 = 0
+\end{array}
+$$
+
+### 2.82
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty} n (\ln(n+1) - \ln(n)) =  \\
+= \lim_{n \to \infty}  n\ln\left( \frac{n+1}{n} \right) =  \\
+= \lim_{n \to \infty} \ln\left( 1 + \frac{1}{n} \right)^n =  \\
+= 1
+\end{array}
+$$
+
+### 2.83
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty}  \frac{\ln\left( 1 + \frac{3}{n} \right)}{\frac{1}{n}} =  \\
+= \lim_{n \to \infty} \ln\left( 1 + \frac{3}{n} \right)^n = 3
+\end{array}
+$$
+
+### 2.84
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty}  \frac{\log_{2}{n^5}}{\log_{8}{n}} = \lim_{n \to \infty} \frac{5\log_{2}{n}}{\frac{1}{3}\log_{2}{n}} = 15
+\end{array}
+$$
+
+### 2.85
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty}  \frac{9^{\log_{3}{n}}}{4^{\log_{2}{n}}} = 1
+\end{array}
+$$
+
+### 2.86
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty} \frac{n^3}{2^n} \\
+u_{n} = \frac{n^3}{2^n} \\
+u_{n+1} = \frac{(n+1)^3}{2^{n+1}} \\
+\lim_{n \to \infty} \frac{|u_{n+1}|}{|u_{n}|} = \lim_{n \to \infty} \frac{\frac{(n+1)^3}{2^{n+1}}}{\frac{n^3}{2^n}} =  \\
+\lim_{n \to \infty} \frac{(n+1)^3}{2n^3} = \frac{n^3 -3n^2 + 3n + 1}{2n^3} =  \\
+= \frac{1}{2} < 1 \implies \lim_{n \to \infty} u_{n} = 0
+\end{array}
+$$
+
+### 2.87
+
+$$
+\begin{array}{l}
+\lim_{n \to \infty} \frac{27^{\log_{3}{n}}}{16^{\log_{2}{n}}} = \lim_{n \to \infty} \frac{n^3}{n^4} = \\
+= \lim_{n \to \infty} \frac{1}{n} = 0
+\end{array}
+$$
+
+### 2.88
+
+$$
+\begin{array}{l}
+u_{n} = \frac{n!}{n^n}  \\
+u_{n} = \frac{1 \cdot 2 \cdot 3 \cdot \dotsc \cdot n}{n \cdot n \cdot \dotsc \cdot n} = \frac{1}{n} \frac{2 \cdot 3 \cdot \dotsc \cdot n}{n \cdot n \cdot \dotsc \cdot n} \begin{cases}
+= 1, \ n\in \left\{ 1, 2 \right\}  \\
+< \frac{1}{n}, \ n \in N \wedge n > 2
+\end{cases} \\
+a_{n} = 0 \\
+b_{n} = \frac{1}{n}  \\
+a_{n} \leq u_{n} \leq b_{n} \\
+\lim_{n \to \infty} a_{n} = \lim_{n \to \infty} b_{n} = 0 \implies \lim_{n \to \infty} u_{n} = 0
+\end{array}
+$$
+
+### 2.89
+
+$$
+\begin{array}{l}
+u_{n} = \frac{2^n \cdot 3^{2n}}{n!} = \frac{18^n}{n!} \\
+u_{n+1} = \frac{18^{n+1}}{(n+1)!} \\
+\lim_{n \to \infty} \frac{|u_{n+1}|}{|u_{n}|} = \lim_{n \to \infty} \frac{18^{n+1}}{18^{n} \cdot (n+1)} = 0
+\end{array}
+$$
+
+### 2.90
+
+$$
+\begin{array}{l}
+u_{n} = \left( 1 - \frac{2}{2^2} \right)\left( 1 - \frac{1}{3^2} \right) \left( 1 - \frac{1}{4^2} \right) \dots \left( 1 - \frac{1}{n^2} \right) = \\
+= \left( \frac{2^2 - 1}{2^2} \right)\left( \frac{3^2 - 1}{3^2} \right)\left( \frac{4^2 - 1}{4^2} \right) \dots \left( \frac{n^2 - 1}{n^2} \right) = \\
+= \frac{2 - 1}{2} \cdot \frac{2+1}{2} \cdot \frac{3 - 1}{3} \cdot \frac{3 + 1}{3} \dots \frac{n - 1}{n} \cdot \frac{n + 1}{n} = \\
+= \frac{1}{2} \cdot \frac{3}{2} \cdot \frac{2}{3} \cdot \frac{4}{3} \cdot \dotsc \cdot \frac{n}{n-1} \cdot 
+\frac{n-1}{n} \cdot \frac{n+1}{n}  = \\
+= \frac{1}{2} \cdot \frac{n+1}{n} \\
+\lim_{n \to \infty}  u_{n} = \frac{1}{2}
+\end{array}
+$$

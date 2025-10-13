@@ -38,7 +38,6 @@ Jeśli $p, q \in \text{Form}$, to $p \equiv q \Leftrightarrow \forall w \in W: w
 - _tautologia_ - formuła zawsze prawdziwa
 - _sprzeczność_ - formuła zawsze fałszywa
 - _spełnialna_ - prawdziwa dla jakiegoś wartościowania
-- _wynikanie_ - $\Gamma \vDash p \Leftrightarrow \vDash \left( \forall \Gamma \Rightarrow p \right)$
 ## Zbiór spójników funkcjonalnie pełny
 >[!definition]
 >Zbiór spójników jest funkcjonalnie pełny, gdy można przy jego użyciu zdefiniować dowolną funkcję prawdziwościową
@@ -61,6 +60,6 @@ Jeśli $p, q \in \text{Form}$, to $p \equiv q \Leftrightarrow \forall w \in W: w
 >2. $\lnot(p \vee q) \equiv \lnot p \wedge \lnot q$
 
 >[!theorem] Schemat dowodu nie wprost
->$\Gamma,\lnot p \vdash F \Rightarrow \Gamma \vdash p$
+>$\lnot (p \Rightarrow q) \Leftrightarrow (\lnot p \Rightarrow \lnot q ) \Rightarrow p$
 
 

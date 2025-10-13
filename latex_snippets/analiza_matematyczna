@@ -48,6 +48,7 @@
 	{trigger: "sq2", replacement: "\\sqrt{$0}$1", options: "mA"},
 	{trigger: "sq3", replacement: "\\sqrt[3]{$0}$1", options: "mA"},
 	{trigger: "sqn", replacement: "\\sqrt[n]{$0}$1", options: "mA"},
+	{trigger: "log", replacement: "\\log_{$0}{$1}$2", options: "mA"},
 	{trigger: "//", replacement: "\\frac{$0}{$1}$2", options: "mA"},
 	{trigger: "invs", replacement: "^{-1}", options: "mA"},
 	{trigger: /([A-Za-z])(\d)/, replacement: "[[0]]_{[[1]]}", options: "rmA", description: "Auto letter subscript", priority: -1},
