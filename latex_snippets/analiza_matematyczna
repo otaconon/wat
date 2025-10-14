@@ -42,7 +42,6 @@
 	// Basic operations
 	{trigger: "sr", replacement: "^{2}", options: "mA"},
 	{trigger: "cb", replacement: "^{3}", options: "mA"},
-	{trigger: "rd", replacement: "^{$0}$1", options: "mA"},
 	{trigger: "_", replacement: "_{$0}$1", options: "mA"},
 	{trigger: "sts", replacement: "_\\text{$0}", options: "mA"},
 	{trigger: "sq2", replacement: "\\sqrt{$0}$1", options: "mA"},
@@ -75,6 +74,7 @@
 	//{trigger: "\\\\(${GREEK}),\\.", replacement: "\\boldsymbol{\\[[0]]}", options: "rmA"},
 	//{trigger: "\\\\(${GREEK})\\.,", replacement: "\\boldsymbol{\\[[0]]}", options: "rmA"},
 
+	{trigger: "circ", replacement: "\\circ", options: "mA"},
 	{trigger: "hat", replacement: "\\hat{$0}$1", options: "mA"},
 	{trigger: "bar", replacement: "\\bar{$0}$1", options: "mA"},
 	{trigger: "dot", replacement: "\\dot{$0}$1", options: "mA", priority: -1},
@@ -135,6 +135,9 @@
 	{trigger: "Ra", replacement: "\\Rightarrow", options: "mA"},
 	{trigger: "Lra", replacement: "\\Leftrightarrow", options: "mA"},
 	{trigger: "not", replacement: "\\lnot", options: "mA"},
+
+	// Groups
+	{trigger: "ord", replacement: "\\text{ord}($0)", options: "mA"},
 
 	{trigger: "and", replacement: "\\cap", options: "mA"},
 	{trigger: "orr", replacement: "\\cup", options: "mA"},
