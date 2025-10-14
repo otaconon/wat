@@ -365,3 +365,64 @@ u_{n} = \left( 1 - \frac{2}{2^2} \right)\left( 1 - \frac{1}{3^2} \right) \left( 
 \lim_{n \to \infty}  u_{n} = \frac{1}{2}
 \end{array}
 $$
+
+### 2.91 Okazać że
+
+$\sqrt[n]{|u_{n}|} \rightarrow q < 1, \text{to } u_{n} \rightarrow 0$
+
+$$
+\begin{array}{l}
+\sqrt[n]{|u_{n}|} \rightarrow q < 1 \implies \forall \varepsilon, \exists N, \forall n \geq N: \sqrt[n]{|u_{n}|} \leq q + \varepsilon \\
+ \\
+|u_{n}| \leq (q + \varepsilon)^n \\
+\text{Choose } q + \varepsilon < 1 \\
+|u_{n}| \leq (q + \varepsilon)^n < 1 \\
+\lim_{n \to \infty} (q + \varepsilon)^n = 0 \\
+ \\
+0 \leq |u_{n}| \leq (q + \varepsilon)^n \\
+\lim_{n \to \infty} 0 = \lim_{n \to \infty} (q + \varepsilon)^n = 0  \\ \\
+
+\text{Thus} \\
+\lim_{n \to \infty} |u_{n}| =0 \\
+-|u_{n}| <= u_{n} \leq |u_{n}| \implies \lim_{n \to \infty} u_{n} = 0 \  \square
+\end{array}
+$$
+
+### 2.92
+
+
+```tikz
+\begin{document}
+\begin{tikzpicture}[line cap=round,line join=round,scale=1] % change scale to your radius r
+
+  % ---- Triangle (tangent to outer circles), precomputed for N=4, r=1 ----
+  % T  = (0, 2)
+  % BL = (-4.7320508076, -6.1961524227)
+  % BR = ( 4.7320508076, -6.1961524227)
+  \draw[thick] (0, 2) --
+               ( 4.7320508076, -6.1961524227) --
+               (-4.7320508076, -6.1961524227) -- cycle;
+
+  % ---- Circles (radius = 1), centers on triangular lattice ----
+  % Row 1 (y = 0)
+  \draw (0, 0) circle (1);
+
+  % Row 2 (y = -1.7320508076)
+  \draw (-1, -1.7320508076) circle (1);
+  \draw ( 1, -1.7320508076) circle (1);
+
+  % Row 3 (y = -3.4641016151)
+  \draw (-2, -3.4641016151) circle (1);
+  \draw ( 0, -3.4641016151) circle (1);
+  \draw ( 2, -3.4641016151) circle (1);
+
+  % Row 4 (y = -5.1961524227)
+  \draw (-3, -5.1961524227) circle (1);
+  \draw (-1, -5.1961524227) circle (1);
+  \draw ( 1, -5.1961524227) circle (1);
+  \draw ( 3, -5.1961524227) circle (1);
+
+\end{tikzpicture}
+\end{document}
+```
+

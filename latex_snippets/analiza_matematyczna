@@ -145,7 +145,7 @@
 	{trigger: "sup=", replacement: "\\supseteq", options: "mA"},
 	{trigger: "eset", replacement: "\\emptyset", options: "mA"},
 	{trigger: "set", replacement: "\\{ $0 \\}$1", options: "mA"},
-	{trigger: "exists", replacement: "\\exists", options: "mA", priority: 1},
+	{trigger: "e\\xists", replacement: "\\exists", options: "mA", priority: 1},
 
 	{trigger: "LL", replacement: "\\mathcal{L}", options: "mA"},
 	{trigger: "HH", replacement: "\\mathcal{H}", options: "mA"},
