@@ -5,17 +5,19 @@ Zbiór $G$, w którym określone jest działanie $\circ$, nazywamy **grupą**, j
 >3) dla każdego elementu, istnieje element do niego _odwrotny_
 
 >[!definition] Własność skracania
-Niech $(G, \circ)$, oraz $a, b,x,y \in G$, wtedy: $$
+Niech $(G, \circ)$, oraz $a, b,x,y \in G$, wtedy: 
+>$$
 \begin{array}{l}
 ax = ay \implies x = y \ &\text{lewostronna własność skracania} \\
 xb = yb \implies x = y \ &\text{prawostronna własność skracania} \\
 \end{array}
-$$
+>$$
 
 >[!lemma]
-Niech $(S, \circ)$  będzie półgrupą, wtedy: $$
+Niech $(S, \circ)$  będzie półgrupą, wtedy: 
+>$$
 (S, \circ) \text{ is a group} \iff \forall a,b \in S \ \exists x,y \in S: ax = b,\ ya = b
-$$
+>$$
 
 >[!proof]
 >$$ 
@@ -30,12 +32,13 @@ $$
 &eb = e(a \hat{x}) = (ea) \hat{x} = a \hat{x} = b \implies e\text{ jest lewostronnie neutralne} \\
 &\text{Dla danego } b \in S,\ \exists \hat{y} \in S: \hat{y}b = e \implies b \text{ jest lewostronnie odwracalne} \\
 \end{array}
-$$
+>$$
 
 >[!theorem]
-Jeśli $(S, \circ)$ jest półgrupą i $\text{ord}(S) < \infty$, to: $$
+Jeśli $(S, \circ)$ jest półgrupą i $\text{ord}(S) < \infty$, to:
+>$$
 (S, \circ) \text{ jest grupą} \iff \text{obydwie własności skarcania są dla niej prawdziwe}
-$$
+>$$
 
 >[!proof]
 > $$
