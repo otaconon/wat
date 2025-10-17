@@ -25,7 +25,7 @@ $$
 $$
 \begin{array}{l}
 a * (-1) = a + (-1) + 1 = a \\
-\forall a \in X: a * (-1) = a, \text{ to oznacza że istinieje elemnt neutralny } e = -1
+\forall a \in X: a * (-1) = (-1) * a = a, \text{ to oznacza że istinieje elemnt neutralny } e = -1
 \end{array}
 $$
 
@@ -34,7 +34,7 @@ $$
 $$
 \begin{array}{l}
 a * (-a) = a + (-a - 2) + 1 = -1 = e \\
-\forall a \in X: a * (-a -2) = e \implies -a-2 = a^{-1}
+\forall a \in X: a * (-a -2) = (-a - 2) * a = e \implies -a-2 = a^{-1}
 \end{array}
 $$
 
@@ -99,7 +99,7 @@ ae - e + 2 = 2a \\
 e(a - 1) = 2(a - 1) \\
 e(a-1) - 2(a-1) = 0 \\
 (a-1)(e - 2) = 0 \\
-\forall a \in X: a * 2 = a \\
+\forall a \in X: a * 2 = 2 * a = a \\
 e = 2 \ \blacksquare
 \end{array}
 $$

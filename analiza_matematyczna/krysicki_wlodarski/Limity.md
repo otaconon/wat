@@ -202,7 +202,7 @@ $$
 \end{array}
 $$
 
-## 2.74
+### 2.74
 
 $$
 \lim_{n \to \infty} \sqrt[n]{2n^3 - 3n^2 + 15} = \lim_{n \to \infty} \sqrt[n]{2} \sqrt[n]{n^3} \sqrt[n]{2 - \frac{3}{n} + \frac{15}{n^3}} = 1
@@ -388,41 +388,36 @@ $$
 \end{array}
 $$
 
-### 2.92
+## Specjalne
+### 1.
+$$
+u_{n}  \left( 1 + \tan\left( \frac{6n}{4n^2-1} \right) \right)^{5n}
+$$
+
+#### Nielegalny sposób
+$$
+\begin{array}{l}
+e^{ix} = \cos(x) - i\sin(x) \\
+e^{-ix} = \cos(x) + i\sin(x) \\
+e^{ix} - e^{-ix} = 2i\sin(x) \\
+\sin(x) = \frac{e^{ix} - e^{-ix}}{2i}
+\end{array}
+$$
+
+$$
+\begin{array}{l} \\
+\text{Jeżeli wiemy że} \lim_{n \to \infty} x_{n} = 0  \\
+\lim_{n \to \infty} \frac{\sin(x_{n})}{x_{n}} = \lim_{n \to \infty} \frac{e^{ix_{n}} -e ^{-ix_{n}}}{2ix_{n}} =  \\
+= \lim_{n \to \infty}  \frac{\left( \frac{d}{dx_{n}} (e^{ix_{n}} - e^{-ix_{n}})\right)}{\frac{d}{dx_{n}} 2ix_{n}} =  \\
+= \lim_{n \to \infty} \frac{ie^{ix_{n}} + ie^{-ix_{n}}}{2i} = \frac{2i}{2i} = 1
+\end{array}
+$$
 
 
-```tikz
-\begin{document}
-\begin{tikzpicture}[line cap=round,line join=round,scale=1] % change scale to your radius r
+## Trywialne
 
-  % ---- Triangle (tangent to outer circles), precomputed for N=4, r=1 ----
-  % T  = (0, 2)
-  % BL = (-4.7320508076, -6.1961524227)
-  % BR = ( 4.7320508076, -6.1961524227)
-  \draw[thick] (0, 2) --
-               ( 4.7320508076, -6.1961524227) --
-               (-4.7320508076, -6.1961524227) -- cycle;
+$$
+\begin{array}{l}
 
-  % ---- Circles (radius = 1), centers on triangular lattice ----
-  % Row 1 (y = 0)
-  \draw (0, 0) circle (1);
-
-  % Row 2 (y = -1.7320508076)
-  \draw (-1, -1.7320508076) circle (1);
-  \draw ( 1, -1.7320508076) circle (1);
-
-  % Row 3 (y = -3.4641016151)
-  \draw (-2, -3.4641016151) circle (1);
-  \draw ( 0, -3.4641016151) circle (1);
-  \draw ( 2, -3.4641016151) circle (1);
-
-  % Row 4 (y = -5.1961524227)
-  \draw (-3, -5.1961524227) circle (1);
-  \draw (-1, -5.1961524227) circle (1);
-  \draw ( 1, -5.1961524227) circle (1);
-  \draw ( 3, -5.1961524227) circle (1);
-
-\end{tikzpicture}
-\end{document}
-```
-
+\end{array}
+$$

@@ -16,7 +16,7 @@ Aksonometryczny układ osi wraz ze skrótami aksonometrycznymi tworzą tzw. **uk
 \lambda_{x} = \frac{|O'X'|}{|OX|}, \
 \lambda_{y} = \frac{|O'Y'|}{|OY|}, \
 \lambda_{z} = \frac{|O'Z'|}{|OZ|}$$
-## Dimetria kawalerska - prawo i lewoskretna
+## Dimetria kawalerska - prawo i lewoskrętna
 - W dimetrii kawalerskiej osie $x'$ i $z'$ są względem siebie prostopadle, a skróty aksonometryczne wynoszą $\lambda_{x}=\lambda_{z}=1:1, \lambda_{y}=2:3 \vee \lambda_{y}=1:2$
 - Kąt między $x'$ i $y'$ wynosi $135\degree$.
 - Dimetria kawalerska zachowuje metryki elementów w płaszczyźnie $xz$ i płaszczyznach do niej równoległych (rzuty kola).
