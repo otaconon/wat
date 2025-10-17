@@ -413,3 +413,11 @@ $$
 \end{array}
 $$
 
+
+## Trywialne
+
+$$
+\begin{array}{l}
+
+\end{array}
+$$
