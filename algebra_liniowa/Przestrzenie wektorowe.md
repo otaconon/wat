@@ -21,4 +21,3 @@
 >(\lambda f)(x) = \lambda f(x)
 >$$
 >$\forall x \in S$
-

@@ -1,7 +1,7 @@
 ## Szeregi o wyrazach nieujemnych
 ### Kryterium porównawcze zbieżności szeregów
 > [!theorem]
-Jeżeli dla szeregu $\sum_{n=1}^{\infty} u_{n}$, gdzie $u_{n}\geq 0$, można wskazać taki szereg zbieżny $\sum_{n=1}^{\infty} v_{n}$, że począwszy od pewnego miejsca $N$ (tzn. dla każdego $n\geq N$), zachodzi nierówność $u_{n \leq v_{n}}$, to szereg $\sum_{n=1}^{\infty} u_{n}$ jest również zbieżny.
+Jeżeli dla szeregu $\sum_{n=1}^{\infty} u_{n}$, gdzie $u_{n}\geq 0$, można wskazać taki szereg zbieżny $\sum_{n=1}^{\infty} v_{n}$, że począwszy od pewnego miejsca $N$ (tzn. dla każdego $n\geq N$), zachodzi nierówność $u_{n} \leq v_{n}$, to szereg $\sum_{n=1}^{\infty} u_{n}$ jest również zbieżny.
 
 ### Kryterium porównawcze rozbieżności szeregów
 > [!theorem]
@@ -22,10 +22,10 @@ Jeżeli dla szeregu $\sum_{n=1}^{\infty} u_{n}$, można wskazać taki szereg roz
 ## Szeregi przemienne
 ### Kryterium Leibniza zbieżności szeregów
 >[!theorem]
-Jeżeli $|u_{n+1}| <= |u_{n}| \ \wedge \ \lim_{ n \to \infty } u_{n = 0}$, to szereg $\sum_{n=1}^{\infty} u_{n}$ jest zbieżny.
+Jeżeli $|u_{n+1}| \leq |u_{n}| \ \wedge \ \lim_{ n \to \infty } u_{n}=0$, to szereg $\sum_{n=1}^{\infty} u_{n}$ jest zbieżny.
 
 ### Kryterium bezwzględnej zbieżności szeregów
 >[!theorem]
->Jeżeli szereg $\sum_{n=1}^{\infty}|u_{n}|$, którego wyrazy są równe wartościom bezwzględnym wyrazów szeregu $\sum_{n=1}^{\infty}$, jest zbieżny, to i szereg $\sum_{n=1}^{\infty} u_{n}$ jest zbieżny.
+>Jeżeli szereg $\sum_{n=1}^{\infty}|u_{n}|$, którego wyrazy są równe wartościom bezwzględnym wyrazów szeregu $\sum_{n=1}^{\infty}u_{n}$, jest zbieżny, to i szereg $\sum_{n=1}^{\infty} u_{n}$ jest zbieżny.
 
 
