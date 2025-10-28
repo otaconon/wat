@@ -1,4 +1,3 @@
-
 >[!definition] linearly independent
 >- A list $v_{1},\dots,v_{m}$ of vectors in $V$ is called _linearly independent_ if the only choice of $a_{1},\dots,a_{m} \in \mathbf{F}$ that makes
 >$$

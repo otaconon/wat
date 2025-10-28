@@ -60,6 +60,9 @@
 	// Linear algebra
 	{trigger: /([^\\])(det)/, replacement: "[[0]]\\[[1]]", options: "rmA"},
 	{trigger: "trace", replacement: "\\mathrm{Tr}", options: "mA"},
+	{trigger: "span", replacement: "\\text{span}($0)", options: "mA"},
+	{trigger: "vm", replacement: "v_{m}$0", options: "mA"},
+	{trigger: "vk", replacement: "v_{k}$0", options: "mA"},
 
 	// More operations
 	{trigger: "([a-zA-Z])hat", replacement: "\\hat{[[0]]}", options: "rmA"},
@@ -134,7 +137,7 @@
 	// Logic
 	{trigger: "Ra", replacement: "\\Rightarrow", options: "mA"},
 	{trigger: "Lra", replacement: "\\Leftrightarrow", options: "mA"},
-	{trigger: "not", replacement: "\\lnot", options: "mA"},
+	{trigger: "lnot", replacement: "\\lnot", options: "mA"},
 
 	// Groups
 	{trigger: "ord", replacement: "\\text{ord}($0)", options: "mA"},
