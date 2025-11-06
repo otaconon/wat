@@ -13,11 +13,13 @@ int main() {
   bool zamiana;
   printf("Prosze podac wybrac zamiane z KM->KW(0) lub zamiane z KW->KM(1):\n");
   scanf("%d", &zamiana);
+  const char* jednostka_podstawowa = zamiana ? "KW" : "KM";
+  const char* jednostka_po_zamianie = zamiana ? "KM" : "KW";
   while (x) {
     printf("Prosze podac liczbe do przeliczenia:\n");
     scanf("%lf", &x);
     if (!x) break;
-    printf("Przed zamiana:\t%lf\n", x);
-    printf("Po zamianie:  \t%lf\n", x * (zamiana ? kw2km : km2kw));
+    printf("Przed zamiana:\t%lf %2s\n", x, jednostka_podstawowa);
+    printf("Po zamianie:  \t%lf %2s\n", x * (zamiana ? kw2km : km2kw), jednostka_po_zamianie);
   }
 }
