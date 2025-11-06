@@ -22,10 +22,10 @@ Jeżeli dla szeregu $\sum_{n=1}^{\infty} u_{n}$, można wskazać taki szereg roz
 ## Szeregi przemienne
 ### Kryterium Leibniza zbieżności szeregów
 >[!theorem]
-Jeżeli $|u_{n+1}| <= |u_{n}| \ \wedge \ \lim_{ n \to \infty } u_{n = 0}$, to szereg $\sum_{n=1}^{\infty} u_{n}$ jest zbieżny.
+Jeżeli $|u_{n+1}| \leq |u_{n}| \ \wedge \ \lim_{ n \to \infty } u_{n}=0$, to szereg $\sum_{n=1}^{\infty} u_{n}$ jest zbieżny.
 
 ### Kryterium bezwzględnej zbieżności szeregów
 >[!theorem]
->Jeżeli szereg $\sum_{n=1}^{\infty}|u_{n}|$, którego wyrazy są równe wartościom bezwzględnym wyrazów szeregu $\sum_{n=1}^{\infty}$, jest zbieżny, to i szereg $\sum_{n=1}^{\infty} u_{n}$ jest zbieżny.
+>Jeżeli szereg $\sum_{n=1}^{\infty}|u_{n}|$, którego wyrazy są równe wartościom bezwzględnym wyrazów szeregu $\sum_{n=1}^{\infty}u_{n}$, jest zbieżny, to i szereg $\sum_{n=1}^{\infty} u_{n}$ jest zbieżny.
 
 

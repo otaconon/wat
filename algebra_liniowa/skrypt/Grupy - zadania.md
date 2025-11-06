@@ -130,3 +130,26 @@ L = P \ \blacksquare
 $$
 
 Grupa $X$ jest więc grupą abelową
+
+0 jest elementem neutralnym ponieważ, wiersz zera jest powtorzeniem naglowka
+ka
+gdyż w każdym wierszu wystepuje 0
+dzialania modulo sa laczne
+
+
+| b/a | 0   | 1   | 2   |
+| --- | --- | --- | --- |
+| 0   |     |     |     |
+| 1   |     |     |     |
+| 2   |     |     |     |
+
+$\mathbb{Z}_{4}$
+
+| b/a | 1   | 2   | 3   |
+| --- | --- | --- | --- |
+| 1   | 1   | 2   | 3   |
+| 2   | 2   | 0   | 2   |
+| 3   | 3   | 2   | 1   |
+nie jest grupa
+dzialanie dodawania dla dowolnego n daje grupe
+dzialanie dodawania mnozenia modulo n daje grupe gdy n jest pierwsze
