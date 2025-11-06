@@ -4,17 +4,17 @@ Wiemy że zbiór $\left\{ \wedge, \vee, \lnot \right\}$ jest funkcjonalnie pełn
 ## 10/44
 
 Przekształćmy wyrażenie korzystając z następujących praw rachunku funkcyjnego:
-1. Prawo de Morgana: $\lnot \exists x \in \mathbb{X} \equiv \forall x \in \mathbb{X}$
+1. Prawo de Morgana: $\lnot \exists x \in \mathbb{X}: P(x) \equiv \forall x \in \mathbb{X}: \lnot P(x)$
 $$
 \begin{array}{l}
 \lnot \exists x \in \mathbb{X}: \exists y \in \mathbb{Y}: (\lnot \varphi(x, y) \vee \psi(x, y)) \equiv \\
-\equiv \forall x \in \mathbb{X}: \forall y \in \mathbb{Y}:(\varphi(x, y) \vee \psi(x, y))
+\equiv \forall x \in \mathbb{X}: \forall y \in \mathbb{Y}: \lnot (\lnot \varphi(x, y) \vee \psi(x, y))
 \end{array}
 $$
 2. Likwidacja implikacji $\varphi(x, y) \Rightarrow \psi(x, y) \equiv \lnot \varphi(x, y) \vee \psi(x, y)$
 $$
 \begin{array}{l}
-\forall x \in \mathbb{X}: \forall y \in \mathbb{Y}:(\varphi(x, y) \vee \psi(x, y)) \equiv \\
+\forall x \in \mathbb{X}: \forall y \in \mathbb{Y}:\lnot(\lnot \varphi(x, y) \vee \psi(x, y)) \equiv \\
 \equiv \forall x \in \mathbb{X}: \forall y \in \mathbb{Y}: \lnot(\varphi(x, y) \Rightarrow \psi(x, y))\\
 \end{array}
 $$

@@ -1,5 +1,5 @@
 //============================================================================
-// Zadanie 2.2
+// Zadanie 2.4
 // Wdi IY3S1 Olbrys Maksymilian
 //============================================================================
 
@@ -7,9 +7,10 @@
 #include <stdbool.h>
 
 int main() {
-  int n;
-  printf("Prosze podac n:\n");
-  scanf("%d", &n);
-  int sgn = n < 0 ? -1 : 1;
-  printf("Wynik:\t%lld\n", (long long)sgn*(sgn*n)*((sgn*n)+1)/2); // Korzystam z wzoru na sume ciagu uwazajac na znak
+  int a, b, k;
+  printf("Prosze podac przedzial [a, b]:\n");
+  scanf("%d %d", &a, &b);
+  printf("Prosze podac k:\n");
+  scanf("%d", &k);
+  printf("Wynik:\t%d", b/k - (a-1)/k);
 }

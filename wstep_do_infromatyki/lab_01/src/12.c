@@ -10,7 +10,7 @@ int main() {
   char imie[20], nazwisko[20];
   unsigned long long nr_albumu;
   unsigned short wiek;
-  char zainteresowania[5][20];
+  char zainteresowania[5][40];
   
   printf("Prosze podac imie i naziwsko:\n");
   scanf("%19s%19s", imie, nazwisko);
@@ -22,7 +22,9 @@ int main() {
   int cnt = 0;
   for (int i = 0; i < 5; i++) {
     printf("Prosze podac swoje zainteresowanie: \n");
-    scanf("%19s", zainteresowania[i]);
+    fflush(stdin);
+    scanf("%[^\n]", zainteresowania[i]);
+    fflush(stdin);
     cnt++;
     
     if (i < 4) {
@@ -43,6 +45,6 @@ int main() {
   printf("Nr albumu + wiek:\t%llu\n", nr_albumu + wiek);
   printf("Zainteresowania: \t");
   for (int j = 0; j < cnt; j++) {
-    printf("%s ", zainteresowania[j]);
+    printf("%s, ", zainteresowania[j]);
   }
 }
