@@ -136,6 +136,7 @@
 
 	// Logic
 	{trigger: "Ra", replacement: "\\Rightarrow", options: "mA"},
+	{trigger: "La", replacement: "\\Leftarrow", options: "mA"},
 	{trigger: "Lra", replacement: "\\Leftrightarrow", options: "mA"},
 	{trigger: "lnot", replacement: "\\lnot", options: "mA"},
 
@@ -159,6 +160,7 @@
 	{trigger: "RR", replacement: "\\mathbb{R}", options: "mA"},
 	{trigger: "ZZ", replacement: "\\mathbb{Z}", options: "mA"},
 	{trigger: "NN", replacement: "\\mathbb{N}", options: "mA"},
+	{trigger: "XX", replacement: "\\mathbb{X}", options: "mA"},
 
 	// Handle spaces and backslashes
 
