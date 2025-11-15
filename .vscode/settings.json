@@ -4,5 +4,8 @@
   "python-envs.pythonProjects": [],
   "code-runner.runInTerminal": true,
   "terminal.integrated.focusAfterRun": "terminal",
-  "lldb.launch.terminal": "integrated"
+  "lldb.launch.terminal": "integrated",
+  "files.associations": {
+    "print_macros.h": "c"
+  }
 }
