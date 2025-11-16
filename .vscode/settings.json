@@ -7,5 +7,6 @@
   "lldb.launch.terminal": "integrated",
   "files.associations": {
     "print_macros.h": "c"
-  }
+  },
+  "terminal.integrated.defaultProfile.windows": "Command Prompt"
 }

@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include "../../templates/print_macros.h"
+#include "../../templates/print_templates.hpp"
+#include "../../templates/array_templates.hpp"
 
 const int N = 20;
 
@@ -14,13 +15,6 @@ int main() {
     arr[i] = rand() % (b - a + 1) + a;
 
   print_array(arr);
-
-  int gis = 1;
-  int idx = 0;
-  for (int i = 1; i < N; i++) {
-    gis = arr[i] > arr[i-1] ? gis + 1 : 1;
-    idx = arr[i] > arr[i-1] ? idx : i;
-  }
-  
-  printf("\n%d, %d", gis, idx);
+  rotate_right(arr, 1);
+  print_array(arr);
 }

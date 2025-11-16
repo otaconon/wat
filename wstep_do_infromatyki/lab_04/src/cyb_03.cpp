@@ -1,8 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include "../../templates/print_macros.h"
-#include "../../templates/array_macros.h"
 #include "../../templates/cyphers.h"
 
 int main() {
