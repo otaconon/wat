@@ -16,6 +16,7 @@ int roll() {
 }
 
 int main() {
+  srand(time(NULL));
   printf("Prosze podac a: ");
   scanf("%d", &a);
   printf("Prosze podac b: ");

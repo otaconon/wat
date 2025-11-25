@@ -5,8 +5,13 @@
   "code-runner.runInTerminal": true,
   "terminal.integrated.focusAfterRun": "terminal",
   "lldb.launch.terminal": "integrated",
+<<<<<<< HEAD
+  "editor.rename.enablePreview": false,
+  "workbench.editor.enablePreview": false
+=======
   "files.associations": {
     "print_macros.h": "c"
   },
   "terminal.integrated.defaultProfile.windows": "Command Prompt"
+>>>>>>> b532e498b78b153475cdbaf78e71d9304e4ff7d2
 }

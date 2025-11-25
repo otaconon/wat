@@ -1,39 +1,42 @@
-#include <stdio.h>
-#include <string.h>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
 
-int main() {
-    int lista, album, wiek, suma;
-    char imie[100], nazwisko[100], zainteresowania[100];
+using namespace std;
 
-   
-    printf("Podaj wiek: ");
-    scanf("%d", &wiek);
+struct Book {
+  string title;
+  int sz;
+  bool available;
+};
 
-    printf("Podaj imie: ");
-    scanf("%s", imie);
-
-    printf("Podaj nazwisko: ");
-    scanf("%s", nazwisko);
-
-    printf("Podaj zainteresowania: ");
-    getchar(); 
-    fgets(zainteresowania, sizeof(zainteresowania), stdin);
-    zainteresowania[strcspn(zainteresowania, "\n")] = 0; 
-
-    printf("Podaj numer z listy: ");
-    scanf("%d", &lista);
-
-    printf("Podaj numer albumu: ");
-    scanf("%d", &album);
-
-    
-    suma = lista + album;
-
-    
-    
-    printf("Imie: %s\nNazwisko: %s\nWiek: %d\nNumer z listy: %d\nNumer albumu: %d\nSuma: %d\nZainteresowania: %s\n",
-           imie, nazwisko, wiek, lista, album, suma, zainteresowania);
-
-    return 0;
+bool compare(const Book &a, const Book &b) {
+  if (a.available == b.available) {
+    if (a.sz == b.sz) {
+      return a.title < b.title;
+    } else {
+      return a.sz < b.sz;
+    }
+  } else {
+    return a.available > b.available;
+  }
 }
 
+int main() {
+  int n;
+  cin >> n;
+  cin.ignore();
+  vector<Book> books(n);
+  for (int i = 0; i < n; i++) {
+    getline(cin, books[i].title);
+    cin >> books[i].sz >> books[i].available;
+    cin.ignore();
+  }
+  
+  sort(books.begin(), books.end(), compare);
+
+  for (int i = 0; i < n; i++) {
+    cout << books[i].available << ' ' << books[i].title << ' ' << books[i].sz << '\n';
+  }
+}
