@@ -33,8 +33,8 @@ $\text{Var} \rightarrow \text{ID} \ | \ P \ | \ F$
 1. usuń $\Leftrightarrow$ i $\Rightarrow$:
 	- $p \Leftrightarrow q \equiv \left( p \Rightarrow q \right) \wedge \left( q \Rightarrow p \right)$
 	- $p \Rightarrow q \equiv \lnot p \vee q$
-2. _NNF_ (negation normal form): wsuń negacje do literałów
-3. rozdzielaj $\vee, \wedge$ tak aby uzyskać pożądaną formę
+	1. _NNF_ (negation normal form): wsuń negacje do literałów
+2. rozdzielaj $\vee, \wedge$ tak aby uzyskać pożądaną formę
 ## Równoważność formuł
 >[!definition]
 Jeśli $\varphi, \psi \in \text{Form}$, to $\varphi \equiv \psi \Leftrightarrow \forall w \in W: w(\phi) = w(\psi)$

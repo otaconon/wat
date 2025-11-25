@@ -8,7 +8,6 @@
 #include <math.h>
 #include <string.h>
 #include <stdbool.h>
-#include <time.h>
 
 static int a, b, n;
 
