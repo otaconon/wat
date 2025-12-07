@@ -2,6 +2,7 @@ kunststoff - plastikowy
 holz - drewno
 der Regenschirm - ekran
 die seife - mydlo
+<<<<<<< HEAD
 die Postleitzahl - kod pocztowy
 Wortschatz - biuro
 das Handy
@@ -60,3 +61,6 @@ der Hunger - glod
 das Kind
 morgen - jutro
 jetzt - teraz
+=======
+die Postleitzahl - kod pocztowy
+>>>>>>> b1d08666769ea3b3ba710451a3eb7dbc18a4fdfe
