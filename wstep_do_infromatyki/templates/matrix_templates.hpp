@@ -1,9 +1,3 @@
-#include <ctype.h>
-#include <math.h>
-#include <stdint.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 template <typename T, size_t N, size_t M, size_t P>
 void matmul(T (&A)[M][N], T (&B)[N][P], T (&C)[M][P]) {

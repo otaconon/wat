@@ -71,3 +71,7 @@ jetzt - teraz
 die Postleitzahl - kod pocztowy
 >>>>>>> b1d08666769ea3b3ba710451a3eb7dbc18a4fdfe
 >>>>>>> 3584ed341c2e828df31c3bc574e46836e276e140
+
+=======
+die Postleitzahl - kod pocztowy
+>>>>>>> b1d08666769ea3b3ba710451a3eb7dbc18a4fdfe
