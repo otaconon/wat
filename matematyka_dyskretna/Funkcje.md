@@ -2,6 +2,10 @@
 
 Relację $f \subset X \times Y$ nazywamy funkcją ze zbioru $X$ w zbiór $Y$, jeśli ma następujące własności:
 1. $\forall x \in X \forall y i$
+## Definicja Funkcji
+
+Relację $f \subset X \times Y$ nazywamy funckcją ze zbioru $X$ w zbiór $Y$, jeśli ma następujące własności:
+1. $\forall x \in X \forall y i$
 ## Funkcja
 ### Funkcja jako relacja
 Relację $f \subset X \times Y$ nazywamy funkcją ze zbioru $X$ w zbiór $Y$, jeśli ma następujące własności:
@@ -94,6 +98,8 @@ Dla dowolnych zbiorów $X,Y$ oraz funkcji $f: X \mapsto Y$ i $g: Y \mapsto X$ is
 4. $\vec{g}(B_{2}) = A_{2}$
 5. $\forall z \in Y ((x, y) \in f \wedge (x,z) \in f) \Rightarrow (y = z)$
 6. $f_{L} = X$
+n Y: \forall z \in Y ((x, y) \in f \wedge (x,z) \in f) \Rightarrow (y = z)$
+2. $f_{L} = X$
 Innymi słowy jeśli do elementu $x$ możemy dobrać elementy $y, z$ które są w relacji z $x$ to $y = z$. A więc do każdego elementu $x$ można dobrać co najwyżej jeden element będący z nim w relacji.
 
 - Zbiór wszystkich funkcji ze zbioru $X$ w $Y$ oznaczamy $Y^X$
