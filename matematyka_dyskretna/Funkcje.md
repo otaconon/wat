@@ -1,9 +1,11 @@
-<<<<<<< HEAD
+## Definicja Funkcji
+
+Relację $f \subset X \times Y$ nazywamy funkcją ze zbioru $X$ w zbiór $Y$, jeśli ma następujące własności:
+1. $\forall x \in X \forall y i$
 ## Definicja Funkcji
 
 Relację $f \subset X \times Y$ nazywamy funckcją ze zbioru $X$ w zbiór $Y$, jeśli ma następujące własności:
 1. $\forall x \in X \forall y i$
-=======
 ## Funkcja
 ### Funkcja jako relacja
 Relację $f \subset X \times Y$ nazywamy funkcją ze zbioru $X$ w zbiór $Y$, jeśli ma następujące własności:
@@ -94,7 +96,8 @@ Dla dowolnych zbiorów $X,Y$ oraz funkcji $f: X \mapsto Y$ i $g: Y \mapsto X$ is
 2. $\left\{ B_{1}, B_{2} \right\}$ jest podziałem zbioru Y
 3. $\vec{f}(A_{1}) = B_{1}$
 4. $\vec{g}(B_{2}) = A_{2}$
->>>>>>> 3584ed341c2e828df31c3bc574e46836e276e140
+5. $\forall z \in Y ((x, y) \in f \wedge (x,z) \in f) \Rightarrow (y = z)$
+6. $f_{L} = X$
 n Y: \forall z \in Y ((x, y) \in f \wedge (x,z) \in f) \Rightarrow (y = z)$
 2. $f_{L} = X$
 Innymi słowy jeśli do elementu $x$ możemy dobrać elementy $y, z$ które są w relacji z $x$ to $y = z$. A więc do każdego elementu $x$ można dobrać co najwyżej jeden element będący z nim w relacji.
@@ -111,7 +114,7 @@ $\forall x,y,z: ((x, y) \in f \wedge (x,z) \in f) \Rightarrow (y = z)$
 ### Obraz
 Każda funkcja $f: X \mapsto Y$ wyznacza pewną funkcję $\vec{f}: \mathcal{P}(X) \mapsto \mathcal{P}(Y)$ tak, że dla dowolnego zbioru $A \subset X$
 $$
-\vec{f}(A) = \left\{ y \in Y: \exists x \in A f(x) = y \right\} 
+\vec{f}(A) = \left\{ y \in Y: \exists x \in A: f(x) = y \right\} 
 $$
 ### Przeciw-obraz
 Każda funkcja $f: X \mapsto Y$ wyznacza pewną funkcję $\vec{f}^{-1}: \mathcal{P}(Y) \mapsto \mathcal{P}(X)$ w następujący sposób. Dla dowolnego zbioru $B \subset Y$

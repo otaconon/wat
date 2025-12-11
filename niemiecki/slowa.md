@@ -5,7 +5,10 @@ die seife - mydlo
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> 3584ed341c2e828df31c3bc574e46836e276e140
+>>>>>>> dd07d90eb95519f8c19b86cad976a899f3f14616
 die Postleitzahl - kod pocztowy
 Wortschatz - biuro
 das Handy
@@ -26,7 +29,7 @@ der Taschenrechner / die Taschenrechner
 die Schreibtischlampe / die Schreibtischlampen
 der Brief / die Briefe
 die E-Mail / die E-Mails
-die Briefmarke / die Briefmarken
+die Briefmarke / die Briefmarken - znaczek pocztowy
 die Post
 der Locher / die Locher - dziurkacz
 das Blatt / die Blatte - blok papieru
@@ -67,11 +70,14 @@ morgen - jutro
 jetzt - teraz
 =======
 jetzt - teraz
-=======
 die Postleitzahl - kod pocztowy
+<<<<<<< HEAD
+die Postleitzahl - kod pocztowy
+=======
 >>>>>>> b1d08666769ea3b3ba710451a3eb7dbc18a4fdfe
 >>>>>>> 3584ed341c2e828df31c3bc574e46836e276e140
 
 =======
 die Postleitzahl - kod pocztowy
 >>>>>>> b1d08666769ea3b3ba710451a3eb7dbc18a4fdfe
+>>>>>>> dd07d90eb95519f8c19b86cad976a899f3f14616
