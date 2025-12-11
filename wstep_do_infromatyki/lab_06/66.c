@@ -26,7 +26,6 @@ void generate_default_headers(int n, int m, char row_headers[n][50], char col_he
 void swap_matrix_rows(int n, int m, int arr[n][m], int row1, int row2);
 int get_visible_length(const char *str);
 
-
 char Powiedzonka[][75] = {
   "Jak sie nie ma co sie lubi, to nie lubi sie i tego co sie ma",
   "Slowo sie rzeklo, kobylka u plota",
@@ -44,25 +43,19 @@ char Powiedzonka[][75] = {
 int main() {
   srand(time(NULL));
 
-  int i = 0;
-  for (; strlen(Powiedzonka[i]) != 0; i++) {
-  }
-
-  char arr[i][2][100];
-  char row_headers[i][100], col_headers[2][100] = { "powiedzonko", "liczba wyrazow" };
-
-  i = 0;
-  for (; strlen(Powiedzonka[i]) != 0; i++) {
+  printf("%-*s", 10, "Lp.");
+  printf("%-*s", 65, "Slowo");
+  printf("%*s", 15, "Liczba slow\n");
+  for (int i = 0; strlen(Powiedzonka[i]) != 0; i++) {
     int cnt = 1;
     for (int j = 0; j < strlen(Powiedzonka[i]); j++) {
       cnt += Powiedzonka[i][j] == ' ';
     }
-    snprintf(row_headers[i], 100, "Lp. %d", i + 1);
-    snprintf(arr[i][0], 100, "%s", Powiedzonka[i]);
-    snprintf(arr[i][1], 100, "%d", cnt);
+    printf("%*d", 5, i+1);
+    printf("%*s", 5, " ");
+    printf("%-*s", 65, Powiedzonka[i]);
+    printf("%*d\n", 15, cnt);
   }
-
-  print_string_matrix(i, 2, 100, arr, row_headers, col_headers);
 }
 
 nmab read_nmab() {
@@ -83,10 +76,10 @@ nmab read_nmab() {
   return input;
 }
 
-void swap(int *a, int *b) {
-  *a = *a ^ *b;
-  *b = *a ^ *b;
-  *a = *a ^ *b;
+void swap(int* a, int* b) {
+  int temp = *a;
+  *a = *b;
+  *b = temp;
 }
 
 int roll(int a, int b) {

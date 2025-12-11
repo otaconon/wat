@@ -3,11 +3,11 @@
 // Wdi IY3S1 Olbrys Maksymilian
 //============================================================================
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <time.h>
 #include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <time.h>
 
 typedef struct {
   int n, m, a, b;
@@ -26,38 +26,49 @@ int main() {
 
   nmab input = read_nmab();
   int n = input.n, m = input.m, a = input.a, b = input.b;
-  float arr[n+1][m];
-  generate_random_float_matrix(n, m, arr, a, b);
+  float arr[n][m + 1];
 
-  char row_headers[n+1][50];
-  char col_headers[m][50];
-  strcpy(row_headers[n], "Srednia");
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < m; j++) {
+      arr[i][j] = (float)roll(a, b);
+    }
+    arr[i][m] = 0;
+  }
+
+  char row_headers[n][50];
+  char col_headers[m + 1][50];
+
   for (int i = 0; i < n; i++) {
     snprintf(row_headers[i], 50, "Wiersz %d", i);
   }
   for (int i = 0; i < m; i++) {
     snprintf(col_headers[i], 50, "Kolumna %d", i);
   }
+  strcpy(col_headers[m], "Srednia");
 
-  print_float_matrix(n, m, arr, row_headers, col_headers);
-  printf("\n\n");
+  float max_avg = -1.0f;
+  int max_avg_row_index = 0;
 
-  for (int i = 0; i < m; i++) {
-    arr[n][i] = 0;
-  }
   for (int i = 0; i < n; i++) {
+    float sum = 0;
     for (int j = 0; j < m; j++) {
-      arr[n][j] += arr[i][j];
+      sum += arr[i][j];
+    }
+    float avg = sum / m;
+    arr[i][m] = avg;
+
+    if (avg > max_avg) {
+      max_avg = avg;
+      max_avg_row_index = i;
     }
   }
-  float max_avg = 0;
-  for (int i = 0; i < m; i++) {
-    arr[n][i] = arr[n][i] / n;
-    max_avg = fmax(max_avg, arr[n][i]);
-  }
 
-  print_float_matrix(n+1, m, arr, row_headers, col_headers);
+  print_float_matrix(n, m + 1, arr, row_headers, col_headers);
+
   printf("\n\nNajwyzsza srednia: %.2f", max_avg);
+  printf("\nWiersz z najwieksza srednia: %d\n", max_avg_row_index);
+
+  return 0;
 }
 
 nmab read_nmab() {
@@ -79,7 +90,7 @@ nmab read_nmab() {
 }
 
 int roll(int a, int b) {
-  return rand() % (b-a+1) + a;
+  return rand() % (b - a + 1) + a;
 }
 
 void generate_random_int_matrix(int n, int m, int arr[n][m], int a, int b) {

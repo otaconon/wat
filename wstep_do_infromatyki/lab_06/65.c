@@ -28,40 +28,38 @@ int main() {
   srand(time(NULL));
   nmab input = read_nmab();
   int n = input.n, m = input.m, a = input.a, b = input.b;
-  int swap_value;
-  printf("Prosze podac wartosc do zamiany: ");
-  scanf("%d", &swap_value);
   printf("\n\n");
 
-  int arr[n][m];
-  generate_random_int_matrix(n, m, arr, a, b);
+  float arr[n][m+1];
+  generate_random_float_matrix(n, m+1, arr, a, b);
 
-  char row_headers[n][50], col_headers[m][50];
+  char row_headers[n][50], col_headers[m+1][50];
+  strcpy(col_headers[m], "Srednia");
   generate_default_headers(n, m, row_headers, col_headers);
 
-  print_int_matrix(n, m, arr, row_headers, col_headers);
+  for (int i = 0; i < n; i++) {
+    arr[i][m] = 0;
+  }
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < m; j++) {
+      arr[i][m] += arr[i][j];
+    }
+  }
+
+  for (int i = 0; i < n; i++) {
+    arr[i][m] /= m;
+  }
+
+  print_float_matrix(n, m+1, arr, row_headers, col_headers);
   printf("\n\n");
 
-  float avg[n];
-  for (int i = 0; i < n; i++) {
-    avg[i] = 0;
-  }
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < m; j++) {
-      avg[i] += arr[i][j];
-    }
-  }
-  for (int i = 0; i < n; i++) {
-    avg[i] = (float)avg[i] / m;
-  }
-
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < m; j++) {
-      arr[i][j] = arr[i][j] > avg[i] ? arr[i][j] : 0;
+      arr[i][j] = arr[i][j] > arr[i][m] ? arr[i][j] : 0;
     }
   }
 
-  print_int_matrix(n, m, arr, row_headers, col_headers);
+  print_float_matrix(n, m+1, arr, row_headers, col_headers);
 }
 
 nmab read_nmab() {

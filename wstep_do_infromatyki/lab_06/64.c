@@ -28,6 +28,7 @@ int main() {
   nmab input = read_nmab();
   int n = input.n, m = input.m, a = input.a, b = input.b;
   int row1, row2;
+  printf("Numerujemy wiersze od zera\n");
   printf("Prosze numer pierwszego wiersza do zamiany: ");
   scanf("%d", &row1);
   printf("\nProsze numer drugiego wiersza do zamiany: ");
@@ -74,9 +75,9 @@ nmab read_nmab() {
 
 
 void swap(int* a, int* b) {
-  *a =  *a  ^  *b;
-  *b =  *a  ^  *b;
-  *a =  *a  ^  *b;
+  int temp = *a;
+  *a = *b;
+  *b = temp;
 }
 
 int roll(int a, int b) {
