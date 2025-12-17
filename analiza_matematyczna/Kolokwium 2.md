@@ -20,7 +20,37 @@ $$
 \end{array}
 $$
 
+## Symbole nieoznaczone
+$[\infty - \infty], [0 \cdot \infty], \left[ \frac{\infty}{\infty} \right], [\frac{0}{0}], 0^0, \infty^0, 0^\infty$
+
 ## Asymptoty
 
-1. Prosta $x = c$ jest asymptota pionowa krzywej gdy, jest jej asymptota lewostronna i prawostronna.
-2. 
+1. Prosta $x = c$ jest asymptotą pionową krzywej gdy, jest jej asymptotą lewostronną i prawostronną, czyli:
+$$
+\begin{array}{l}
+&(\lim_{x \to c^-} f(x) = -\infty \vee \lim_{x \to c^+} f(x) = +\infty) \\
+\wedge &(\lim_{x \to c^-} f(x) = \infty \vee \lim_{x \to c^+} f(x) = -\infty)
+\end{array}
+$$
+2. Prosta o równaniu $y = mx + n$ jest asymptotą ukośną gdy $m \neq 0$, gdy następujące granice są istnieją i są skończone:
+	1. $m = \lim_{x \to \pm\infty} \frac{f(x)}{x}$
+	2. $n = \lim_{x \to \pm\infty} = (f(x) - mx)$
+3. Prosta jest asymptotą poziomą gdy spełnia warunki asymptoty poziomej ale $m = 0$
+
+## Wklęsłość i wypukłość funkcji
+
+Załóżmy że funkcja $f(x)$ ma pochodną na przedziale $(a; b)$ mówimy że krzywa $y = f(x)$ jest:
+
+1. Wypukła na przedziale $(a; b)$ wtedy i tylko wtedy, gdy dla każdego $x_{0} \in (a; b)$ styczna poprowadzona do tej krzywej w punkcie $(x_{0}, f(x_{0}))$ jest położona pod tą krzywą.
+2. Wklęsła na przedziale $(a; b)$ wtedy i tylko wtedy, gdy dla każdego $x_{0} \in (a; b)$ styczna poprowadzona do tej krzywej w punkcie $(x_{0}; f(x_{0}))$ jest położona nad tą krzywą.
+
+Jeżeli $f(x)$ dla każdego $x \in (a; b)$:
+- $f''(x) < 0$, to krzywa $y = f(x)$ jest wklęsła na przedziale $(a; b)$
+- $f''(x) > 0$, to krzywa $y = f(x)$ jest wypukła na przedziale $(a; b)$
+
+## Szereg Taylora
+$$
+f(x) = \sum_{k=1}^{n-1} \frac{f^{(k)} (a)}{k!} + \frac{f^{(n)} (c)}{n!}(x-a)^n
+$$
+Dla $a = 0$ otrzymujemy szereg Maclaurina
+
