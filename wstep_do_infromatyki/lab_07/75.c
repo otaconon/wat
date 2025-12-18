@@ -1,3 +1,8 @@
+//============================================================================
+// Zadanie 7.5
+// Wdi IY3S1 Olbrys Maksymilian
+//============================================================================
+
 #include <stdio.h>
 #include <string.h>
 
@@ -22,9 +27,9 @@ typedef struct {
 typedef struct {
   char Nazwa[20];
   int Wypornosc;
-  float Dlugosc;    // w metrach
-  float Szerokosc;  // w metrach
-  float Zanurzenie; // w metrach
+  float Dlugosc;
+  float Szerokosc;
+  float Zanurzenie;
   int Kaliber;
   int IloscDzial;
   int IloscPlot25;
@@ -84,41 +89,33 @@ int main() {
     strcpy(TTDDm[i].Nazwa, TTDD[i].Nazwa);
     TTDDm[i].Wypornosc = TTDD[i].Wypornosc;
 
-    ft = 0;
-    in = 0;
+    ft = 0; in = 0;
     if (sscanf(TTDD[i].Dlugosc, "%d'%d", &ft, &in) == 2)
       TTDDm[i].Dlugosc = ft * 0.3048 + in * 0.0254;
     else
       TTDDm[i].Dlugosc = 0.0;
 
-    ft = 0;
-    in = 0;
+    ft = 0; in = 0;
     if (sscanf(TTDD[i].Szerokosc, "%d'%d", &ft, &in) == 2)
       TTDDm[i].Szerokosc = ft * 0.3048 + in * 0.0254;
     else
       TTDDm[i].Szerokosc = 0.0;
 
-    ft = 0;
-    in = 0;
+    ft = 0; in = 0;
     if (sscanf(TTDD[i].Zanurzenie, "%d'%d", &ft, &in) == 2)
       TTDDm[i].Zanurzenie = ft * 0.3048 + in * 0.0254;
     else
       TTDDm[i].Zanurzenie = 0.0;
 
-    TTDDm[i].Kaliber = TTDD[i].Kaliber;
-    TTDDm[i].IloscDzial = TTDD[i].IloscDzial;
-    TTDDm[i].IloscPlot25 = TTDD[i].IloscPlot25;
-    TTDDm[i].IloscPlot13 = TTDD[i].IloscPlot13;
-    TTDDm[i].Wyrzutnie = TTDD[i].Wyrzutnie;
-    TTDDm[i].Bomby = TTDD[i].Bomby;
     TTDDm[i].Vmax = TTDD[i].Vmax;
-    TTDDm[i].Zaloga = TTDD[i].Zaloga;
   }
 
   printf("Lista TTDDm (wymiary w metrach):\n");
-  printf("Lp.\tNazwa\tWyp.\tDl.[m]\tSz.[m]\tZan.[m]\tVmax\n");
+  printf("%-3s %-12s %6s %8s %8s %8s %5s\n", 
+         "Lp.", "Nazwa", "Wyp.", "Dl.", "Sz.", "Zan.", "Vmax");
+  
   for (i = 0; i < N; i++) {
-    printf("%d\t%s\t%d\t%.2f\t%.2f\t%.2f\t%d\n",
+    printf("%-3d %-12s %6d %8.2f %8.2f %8.2f %5d\n",
         i + 1,
         TTDDm[i].Nazwa,
         TTDDm[i].Wypornosc,
@@ -127,7 +124,7 @@ int main() {
         TTDDm[i].Zanurzenie,
         TTDDm[i].Vmax);
   }
-
+  
   for (i = 0; i < N - 1; i++) {
     for (j = 0; j < N - 1 - i; j++) {
       if (TTDDm[j].Dlugosc < TTDDm[j + 1].Dlugosc) {
@@ -139,9 +136,11 @@ int main() {
   }
 
   printf("\nTrzy najdluzsze typy:\n");
-  printf("Lp.\tNazwa\tWyp.\tDl.[m]\tSz.[m]\tZan.[m]\tVmax\n");
+  printf("%-3s %-12s %6s %8s %8s %8s %5s\n", 
+         "Lp.", "Nazwa", "Wyp.", "Dl.", "Sz.", "Zan.", "Vmax");
+
   for (i = 0; i < 3; i++) {
-    printf("%d\t%s\t%d\t%.2f\t%.2f\t%.2f\t%d\n",
+    printf("%-3d %-12s %6d %8.2f %8.2f %8.2f %5d\n",
         i + 1,
         TTDDm[i].Nazwa,
         TTDDm[i].Wypornosc,

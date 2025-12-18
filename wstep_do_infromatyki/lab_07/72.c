@@ -1,5 +1,11 @@
+//============================================================================
+// Zadanie 7.2
+// Wdi IY3S1 Olbrys Maksymilian
+//============================================================================
+
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 typedef struct {
   char marka[50];
@@ -9,45 +15,61 @@ typedef struct {
   float cena;
 } Samochod;
 
+#define N 5
+char TMk[N][20]={"Mercedes","VolksWagen","Toyota","Hyundai","Opel"}; //Marka
+char TMo[N][20]={"C220","VW Golf","Corolla","i30","Astra"}; //Model
+char TCol[N][20]={"Granat","Czarny","Srebrny","Bialy","Oliwka"}; //kolor
+int  TPrz[N]={153000,27000,125200,30480,54900}; //Przebieg
+int  TAGK[N]={27000,63000,97000,77000,27000};  //Cena
+
 int main() {
   int n, i;
-  Samochod *auta;
+  Samochod auta[N];
 
-  printf("Podaj ilosc samochodow do wprowadzenia: ");
-  scanf("%d", &n);
-
-  auta = (struct Samochod *)malloc(n * sizeof(Samochod));
-
-  for (i = 0; i < n; i++) {
-    printf("\n--- Samochod nr %d ---\n", i + 1);
+  for (i = 0; i < N; i++) {
     printf("Podaj marke: ");
-    scanf("%s", auta[i].marka);
+    strcpy(auta[i].marka, TMk[i]);
     printf("Podaj model: ");
-    scanf("%s", auta[i].model);
+    strcpy(auta[i].model, TMo[i]);
     printf("Podaj kolor: ");
-    scanf("%s", auta[i].kolor);
+    strcpy(auta[i].kolor, TCol[i]);
     printf("Podaj przebieg: ");
-    scanf("%d", &auta[i].przebieg);
+    auta[i].przebieg = TPrz[i];
     printf("Podaj cene: ");
-    scanf("%f", &auta[i].cena);
+    auta[i].cena = TAGK[i];
   }
 
-  printf("\nLista wszystkich samochodow: \n");
-  printf("Lp.\tMarka\tModel\tKolor\tPrzebieg\tCena\n");
+  printf("\nLista wszystkich samochodow:\n");
+  
+  printf("%-4s %-15s %-15s %-12s %10s %12s\n", 
+         "Lp.", "Marka", "Model", "Kolor", "Przebieg", "Cena");
   for (i = 0; i < n; i++) {
-    printf("%d\t%s\t%s\t%s\t%d\t%.2f\n",
-        i + 1, auta[i].marka, auta[i].model, auta[i].kolor, auta[i].przebieg, auta[i].cena);
+    printf("%-4d %-15s %-15s %-12s %10d %12.2f\n",
+        i + 1, 
+        auta[i].marka, 
+        auta[i].model, 
+        auta[i].kolor, 
+        auta[i].przebieg, 
+        auta[i].cena);
   }
 
-  printf("\nSamochody z przebiegeim ponizej 70000 KM\n");
-  printf("Lp.\tMarka\tModel\tKolor\tPrzebieg\tCena\n");
-  for (i = 0; i < n; i++) {
+  printf("\nSamochody z przebiegiem ponizej 70000 KM:\n");
+  
+  printf("%-4s %-15s %-15s %-12s %10s %12s\n", 
+         "Lp.", "Marka", "Model", "Kolor", "Przebieg", "Cena");
+  
+  int cnt = 1;
+  for (i = 0; i < N; i++) {
     if (auta[i].przebieg < 70000) {
-      printf("%d\t%s\t%s\t%s\t%d\t%.2f\n",
-          i + 1, auta[i].marka, auta[i].model, auta[i].kolor, auta[i].przebieg, auta[i].cena);
+      printf("%-4d %-15s %-15s %-12s %10d %12.2f\n",
+          cnt++, 
+          auta[i].marka, 
+          auta[i].model, 
+          auta[i].kolor, 
+          auta[i].przebieg, 
+          auta[i].cena);
     }
   }
 
-  free(auta);
   return 0;
 }

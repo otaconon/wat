@@ -1,3 +1,8 @@
+//============================================================================
+// Zadanie 7.1
+// Wdi IY3S1 Olbrys Maksymilian
+//============================================================================
+
 #include <stdio.h>
 
 typedef struct {
@@ -28,9 +33,10 @@ int main() {
 
   printf("\n");
 
-  printf("Marka\tModel\tKolor\tPrzebieg\tCena\n");
+  printf("%-20s %-20s %-15s %10s %12s\n", 
+         "Marka", "Model", "Kolor", "Przebieg", "Cena");
 
-  printf("%s\t%s\t%s\t%d\t%.2f\n",
+  printf("%-20s %-20s %-15s %10d %12.2f\n",
       Auto.marka,
       Auto.model,
       Auto.kolor,

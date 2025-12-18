@@ -1,3 +1,8 @@
+//============================================================================
+// Zadanie 7.7
+// Wdi IY3S1 Olbrys Maksymilian
+//============================================================================
+
 #include <stdio.h>
 #include <string.h>
 
@@ -18,18 +23,22 @@ void wyswietlStan(Wlasciciel w) {
   int i;
   printf("\n--- STAN POSIADANIA ---\n");
   printf("Wlasciciel: %s %s\n", w.Imie, w.Nazwisko);
-  printf("Liczba psow: %d/4\n", w.LiczbaPsow);
+  printf("Liczba psow: %d\n", w.LiczbaPsow);
 
   if (w.LiczbaPsow == 0) {
-    printf("(Brak psow)\n");
+    printf("Brak psow\n");
   } else {
     printf("Lista psow:\n");
+    printf("%-4s %-12s %-15s %5s\n", "Lp.", "Imie", "Rasa", "Wiek");
     for (i = 0; i < w.LiczbaPsow; i++) {
-      printf("%d. %s (Rasa: %s, Wiek: %d)\n",
-          i + 1, w.Psy[i].Imie, w.Psy[i].Rasa, w.Psy[i].Wiek);
+      printf("%-*d %-12s %-15s %*d\n",
+          4, i + 1, 
+          w.Psy[i].Imie, 
+          w.Psy[i].Rasa, 
+          5, w.Psy[i].Wiek
+      );
     }
   }
-  printf("-----------------------\n");
 }
 
 void dodajPsa(Wlasciciel *w) {
@@ -60,13 +69,9 @@ void usunPsa(Wlasciciel *w, char *imiePsa) {
         w->Psy[j] = w->Psy[j + 1];
       }
       w->LiczbaPsow--;
-      printf("Sukces: Pies %s zostal usuniety.\n", imiePsa);
+      printf("Pies %s zostal usuniety.\n", imiePsa);
       break;
     }
-  }
-
-  if (!znaleziono) {
-    printf("Blad: Nie znaleziono psa o imieniu %s.\n", imiePsa);
   }
 }
 

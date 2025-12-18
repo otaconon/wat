@@ -1,3 +1,8 @@
+//============================================================================
+// Zadanie 7.3
+// Wdi IY3S1 Olbrys Maksymilian
+//============================================================================
+
 #include <stdio.h>
 
 typedef struct {
@@ -9,6 +14,8 @@ int main() {
   float a, b, r;
   Punkt p;
   float lewa_strona, prawa_strona;
+  
+  const char *tekst_wyniku; 
 
   printf("Podaj wspolrzedne srodka okregu (a b): ");
   scanf("%f %f", &a, &b);
@@ -22,16 +29,22 @@ int main() {
   lewa_strona = (p.x - a) * (p.x - a) + (p.y - b) * (p.y - b);
   prawa_strona = r * r;
 
-  printf("\nLp.\tX\tY\tWynik\n");
-  printf("1\t%.2f\t%.2f\t", p.x, p.y);
-
   if (lewa_strona < prawa_strona) {
-    printf("Wewnatrz okregu\n");
+    tekst_wyniku = "Wewnatrz okregu";
   } else if (lewa_strona > prawa_strona) {
-    printf("Na zewnatrz okregu\n");
+    tekst_wyniku = "Na zewnatrz okregu";
   } else {
-    printf("Na okregu\n");
+    tekst_wyniku = "Na okregu";
   }
+
+  printf("\n");
+
+  printf("%-4s %10s %10s   %-20s\n", "Lp.", "X", "Y", "Wynik");
+  printf("%-4d %10.2f %10.2f   %-20s\n", 
+    1, 
+    p.x, 
+    p.y, 
+    tekst_wyniku);
 
   return 0;
 }

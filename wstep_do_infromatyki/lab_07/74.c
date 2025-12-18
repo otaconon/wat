@@ -1,3 +1,8 @@
+//============================================================================
+// Zadanie 7.4
+// Wdi IY3S1 Olbrys Maksymilian
+//============================================================================
+
 #include <stdio.h>
 #include <string.h>
 
@@ -62,9 +67,12 @@ int main() {
     TTDD[i].Zaloga = TZal[i];
   }
 
-  printf("Lp.\tNazwa\tWyp.\tDl.\tSzer.\tZan.\tKal.\tDz.\tAA25\tAA13\tTor.\tBomb\tVmax\tZal.\n");
+  printf("%-3s %-12s %6s %8s %7s %7s %4s %3s %5s %5s %5s %5s %5s %5s\n",
+      "Lp.", "Nazwa", "Wyp.", "Dl.", "Szer.", "Zan.", 
+      "Kal.", "Dz.", "AA25", "AA13", "Tor.", "Bomb", "Vmax", "Zal.");
+
   for (i = 0; i < N; i++) {
-    printf("%d\t%s\t%d\t%s\t%s\t%s\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n",
+    printf("%-3d %-12s %6d %8s %7s %7s %4d %3d %5d %5d %5d %5d %5d %5d\n",
         i + 1,
         TTDD[i].Nazwa,
         TTDD[i].Wypornosc,
