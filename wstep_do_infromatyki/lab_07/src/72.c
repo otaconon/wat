@@ -23,19 +23,13 @@ int  TPrz[N]={153000,27000,125200,30480,54900}; //Przebieg
 int  TAGK[N]={27000,63000,97000,77000,27000};  //Cena
 
 int main() {
-  int n, i;
   Samochod auta[N];
 
-  for (i = 0; i < N; i++) {
-    printf("Podaj marke: ");
+  for (int i = 0; i < N; i++) {
     strcpy(auta[i].marka, TMk[i]);
-    printf("Podaj model: ");
     strcpy(auta[i].model, TMo[i]);
-    printf("Podaj kolor: ");
     strcpy(auta[i].kolor, TCol[i]);
-    printf("Podaj przebieg: ");
     auta[i].przebieg = TPrz[i];
-    printf("Podaj cene: ");
     auta[i].cena = TAGK[i];
   }
 
@@ -43,7 +37,7 @@ int main() {
   
   printf("%-4s %-15s %-15s %-12s %10s %12s\n", 
          "Lp.", "Marka", "Model", "Kolor", "Przebieg", "Cena");
-  for (i = 0; i < n; i++) {
+  for (int i = 0; i < N; i++) {
     printf("%-4d %-15s %-15s %-12s %10d %12.2f\n",
         i + 1, 
         auta[i].marka, 
@@ -59,7 +53,7 @@ int main() {
          "Lp.", "Marka", "Model", "Kolor", "Przebieg", "Cena");
   
   int cnt = 1;
-  for (i = 0; i < N; i++) {
+  for (int i = 0; i < N; i++) {
     if (auta[i].przebieg < 70000) {
       printf("%-4d %-15s %-15s %-12s %10d %12.2f\n",
           cnt++, 
