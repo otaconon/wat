@@ -19,6 +19,39 @@ $$
 1. $\int A \cdot f(x) dx = A \cdot \int f(x) dx$
 2. $\int(f(x) \pm g(x)) dx = \int f(x) dx \pm \int g(x) dx$
 
+### Całkowanie przez podstawienie
+Jeżeli
+1. Funkcja $f: I \mapsto R$ jest ciągła na przedziale $I$
+2. Funkcja $\varphi: J \mapsto R$ ma ciągłą pochodną na przedziale $J$
+to
+$$
+\int f(x) dx = \int f(\varphi(t)) \varphi'(x) dx = F(\varphi(t)) + C
+$$
+
+### Ważniejsze całki liczone przez podstawienie
+$$
+\begin{array}{l}
+\int \frac{f'(x)}{f(x)} dx &=& \ln |f(x)| + C \\
+\int \frac{f'(x)}{f^2(x)} dx &=& -\frac{1}{f(x)} + C \\
+\int \frac{f'(x)}{\sqrt{f(x)}} dx &=& 2\sqrt{f(x)} + C
+\end{array}
+$$
+
+### Całkowanie przez części
+Jeżeli funkcje $f(x)$ i $g(x)$ mają na pewnym przedziale ciągłe pochodne $f'(x)$ i $g'(x)$, to
+$$
+\int f(x) \cdot g'(x) dx = f(x) \cdot g(x) - \int f'(x) \cdot g(x) dx
+$$
+Wzory:
+$$
+\begin{array}{l}
+\int \sin ax dx &=& -\frac{1}{a} \cos ax + C \\
+\int \cos ax dx &=& \frac{1}{a} \sin ax + C \\
+\int e^{ax} dx &=& \frac{1}{a} e^{ax} + C
+\end{array}
+$$
+
+
 ### Całki nieoznaczone funkcji elementarnych
 $$
 \begin{array}{l}
