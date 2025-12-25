@@ -17,7 +17,7 @@ $\forall x,y,z: ((x, y) \in f \wedge (x,z) \in f) \Rightarrow (y = z)$
 ### Obraz
 Każda funkcja $f: X \mapsto Y$ wyznacza pewną funkcję $\vec{f}: \mathcal{P}(X) \mapsto \mathcal{P}(Y)$ tak, że dla dowolnego zbioru $A \subset X$
 $$
-\vec{f}(A) = \left\{ y \in Y: \exists x \in A f(x) = y \right\} 
+\vec{f}(A) = \left\{ y \in Y: \exists x \in A : f(x) = y \right\} 
 $$
 ### Przeciw-obraz
 Każda funkcja $f: X \mapsto Y$ wyznacza pewną funkcję $\vec{f}^{-1}: \mathcal{P}(Y) \mapsto \mathcal{P}(X)$ w następujący sposób. Dla dowolnego zbioru $B \subset Y$
