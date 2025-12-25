@@ -54,3 +54,9 @@ f(x) = \sum_{k=1}^{n-1} \frac{f^{(k)} (a)}{k!} + \frac{f^{(n)} (c)}{n!}(x-a)^n
 $$
 Dla $a = 0$ otrzymujemy szereg Maclaurina
 
+## Dziedzina
+
+Dla $\log_{a}{b}$
+- $a > 0$
+- $b > 0$
+- $a \neq 1$
